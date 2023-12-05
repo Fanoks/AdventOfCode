@@ -1,7 +1,17 @@
-temp1, temp2, first, x, y, final = '', '', True, [], [], 0
-f = open('a.txt', 'r')
+#Varibles
+temp1 = ''
+temp2 = ''
+first = True
+x = []
+y = []
+final = 0
+
+#Open and read file
+f = open('x.txt', 'r')
 for i in range(1000):
     x.append(f.readline())
+
+#Main program
 for i in range(1000):
     for element in x[i]:
         if element.isdigit() and first == True:
